@@ -1,0 +1,135 @@
+ [
+  {
+    "id":"guitarra01",
+    "tipo":"guitarras",
+    "titulo": "Guitarra criolla",
+    "descripcion": "Guitarra acústica de alta calidad, ideal para principiantes y profesionales.",
+    "precio": "$2990450",
+    "imagen": "/guitarras/guitarra1.webp",
+    "alt": "Guitarra criolla",
+    "link":"/producto/guitarras"
+    },
+  {
+    "id":"guitarra02",
+    "tipo": "guitarras",
+    "titulo": "Guitarra criolla",
+    "descripcion": "Guitarra acústica de alta calidad, ideal para principiantes y profesionales.",
+    "precio": "$299500",
+    "imagen": "/guitarras/guitarra2.webp",
+    "alt": "Guitarra criolla",
+    "link":"/producto/guitarra-acustica"
+    },
+    {
+    "id":"guitarra03",
+    "tipo": "guitarras",
+    "titulo": "Guitarra Acústica",
+    "descripcion": "Guitarra muy bonita de los dos lados",
+    "precio": "$350000",
+    "imagen": "/guitarras/guitarra3.webp",
+    "alt": "Guitarra Acústica",
+    "link":"/producto/guitarra-acustica"
+    },
+    {
+    "id":"Mic01",
+    "tipo": "microfonos",
+    "titulo": "Microfono Bochita",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "3910000",
+    "imagen": "/public/mic/mic1.webp",
+    "alt": "Microfono Bochita",
+    "link":"/producto/guitarra-acustica"
+    },
+       {
+    "id":"Mic02",
+    "tipo": "microfonos",
+    "titulo": "Microfono sin bochita",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "4291250",
+    "imagen": "/public/mic/mic2.webp",
+    "alt": "Microfono Bochita",
+    "link":"/producto/guitarra-acustica"
+    },
+  {
+    "id":"Mic03",
+    "tipo": "microfonos",
+    "titulo": "Microfono Streaming",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "1500050",
+    "imagen": "/public/mic/mic3.webp",
+    "alt": "Microfono Bochita",
+    "link":"/producto/guitarra-acustica"
+    },
+     {
+    "id":"tec01",
+    "tipo": "teclados",
+    "titulo": "Teclado Casio Ctk3500",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "437427",
+    "imagen": "/public/teclados/teclado1.webp",
+    "alt": "Teclado Casio",
+    "link":"/producto/guitarra-acustica"
+    },
+       {
+    "id":"tec02",
+    "tipo": "teclados",
+    "titulo": "Teclado Sensitivo Casio Ct-s300 61",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "377568",
+    "imagen": "/public/teclados/teclado2.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    },
+   
+    {
+    "id":"tec03",
+    "tipo": "teclados",
+    "titulo": "Teclado Portátil Yamaha PSR-E383",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "4678654",
+    "imagen": "/public/teclados/teclado3.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    },
+  {
+    "id":"tec04",
+    "tipo": "teclados",
+    "titulo": "Teclado Infantil Casio Sa-50 32",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "191750",
+    "imagen": "/public/teclados/teclado4.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    },
+      {
+    "id":"viento01",
+    "tipo": "vientos",
+    "titulo": "Flauta piccolo Jupiter JPC-1000E en C - c/estuche",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "191750",
+    "imagen": "/public/vientos/flauta.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    }   ,    
+     {
+    "id":"viento02",
+    "tipo": "vientos",
+    "titulo": "Acordeón Corelli Jh2011 Bk a Piano 34 Teclas 60 Bajos",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "191750",
+    "imagen": "/public/vientos/vientos2.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    },
+     {
+    "id":"viento03",
+    "tipo": "vientos",
+    "titulo": "Armónica Hohner Special 20 C",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, nisi assumenda esse, voluptas fuga architecto commodi numquam labore sit expedita officia adipisci vel itaque voluptates dolorum. Quasi delectus consequuntur ea.</br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem ratione, eveniet voluptatibus excepturi quae porro quis facilis minima, voluptas fuga ea? Voluptatem quidem corporis, voluptas atque suscipit harum sed?",
+    "precio": "191750",
+    "imagen": "/public/vientos/vientos3.webp",
+    "alt": "Teclado Sensitivo Casio Ct-s300 61",
+    "link":"/producto/guitarra-acustica"
+    }              
+
+
+]

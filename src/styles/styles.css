@@ -1,0 +1,524 @@
+/* Reset básico para evitar estilos predeterminados inconsistentes */
+@font-face{
+    font-family: 'Playfair Display';
+    src: url('../font/Playfair_Display,Playfair_Display_SC/Playfair_Display/static/PlayfairDisplay-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+        font-family: 'Playfair Display SC';
+        src: url('../font/Playfair_Display,Playfair_Display_SC/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+:root{
+    /*Variables para letra y color de importes*/
+    --amount-font:"Arial", sans-serif;
+    --amount-color:#e76e22;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  color: #333;
+  /*agregado para mantener el footer al pie*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos para el Header */
+header {
+    position: relative; /* Permite posicionar elementos hijos de forma absoluta */
+    text-align: center;
+    padding: 1rem; 
+    background: rgba(81,75,91,0.57);
+    background: linear-gradient(182deg,rgba(81,75,91,0.57) 0%, rgba(0,207,255,0.43) 80%);
+    background: -webkit-linear-gradient(182deg,rgba(81,75,91,0.57) 0%, rgba(0,207,255,0.43) 80%);
+    background: linear-gradient(182deg,rgba(81,75,91,0.57) 0%, rgba(0,207,255,0.43) 80%);
+}
+
+header .logo{
+    position: absolute;
+    top:1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+   height: auto;
+    max-width: 6%;
+    
+}
+header h1, header h2 { margin: 0.5rem 0;}
+
+/* Estilos para el enlace del logo */
+header .logo a {
+  text-decoration: none;  /* Sin subrayado */
+  font-weight: bold;      /* Letra en negrita */
+  margin-left: 10px;      /* Espacio entre la imagen y el texto */
+  color: #fff;            /* Color del texto, ajústalo según tu diseño */
+}
+
+
+
+/* Menú principal */
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #333;
+}
+
+.main-nav li {
+  margin: 0 1rem;
+  position: relative;/*para posicionar el submenú*/
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background-color 0.3s ease; /* Animación suave */
+}
+.main-nav a:hover{
+    color: #e76e22;
+}
+.main-nav #carrito{
+  color: #fff;
+  margin-top: 0.5em;
+  width: 2em;
+  height: 2em;
+}
+/* Estilos para el submenú */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;   /* Se ubica justo debajo del elemento padre */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  display: none; /* Se oculta por defecto */
+  z-index: 100;
+  visibility: hidden;/*oculto por defecto*/
+  transition: opacity 0.3s ease;/*para que la opacidad se ejecute lenta*/
+}
+
+.dropdown-menu li a {
+  display: block;  
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  color: #faeded;
+}
+
+/* Mostrar el submenú al hacer hover sobre el li del menú principal */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity:1;
+  visibility: visible;
+}
+
+/* Contenedor principal de la página (grid de layout) */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Sidebar, Main, Complementary */
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  /*agregado para mantener el footer al pie*/
+  flex-grow: 1;
+}
+
+/* Sidebar y Menú secundario */
+.sidebar {
+  background-color: #eaeaea;
+  padding: 1rem;
+}
+
+.secondary-nav ul {
+  list-style: none;
+}
+
+.secondary-nav a {
+  display: block;
+  text-decoration: none;
+  color: #0d2a3a;
+  padding: 0.5rem 0;
+}
+.secondary-nav a:hover{
+    color: #e76e22;
+  }
+
+/* Main con grid de productos */
+main {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Estilos para las cards de producto */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card .price {
+  font-family: var(--amount-font);  
+  font-weight: bold;
+  color: var(--amount-color);
+  margin: 0.5rem 0;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Efectos al pasar el mouse sobre la card */
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+/* Sección de reseñas */
+.reseñas {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Contenedor de reseñas en Flexbox */
+.flex-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las reseñas en línea */
+  gap: 1rem;
+}
+
+/* Estilos para las cards de reseña */
+.review-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  flex: 1 1 300px; /* Permite flexibilidad y un tamaño mínimo de 300px */
+  max-width: 150px; /* tamaño ancho */
+}
+
+.review-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.review-content {
+  margin-top: 0.5rem;
+}
+
+.review-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+/*flecha volver */
+#btn-volver-arriba {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #71c7f8; 
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#btn-volver-arriba svg {
+  margin-top: 6px;
+}
+
+#btn-volver-arriba:hover {
+  background-color: #235a72;
+  transform: scale(1.1);
+}
+
+/*Aside lista del Carrito de compras*/
+.listCarrito{
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 300px; /* Permite flexibilidad y un tamaño mínimo de 300px */
+  ul{list-style-type: none;}
+  
+}
+/*Aside: Imagen carrito*/
+/* Estilos para la sección de publicidad */
+.publicidad img {
+  width: 100%;
+  border-radius: 10px;        /* Bordes redondeados para un efecto más suave */
+  transition: transform 0.3s ease, 
+              filter 0.3s ease, 
+              box-shadow 0.3s ease;  /* Transición suave para los cambios */
+}
+
+/* Efectos al pasar el mouse por la imagen */
+.publicidad img:hover {
+  transform: scale(1.05);     /* Aumenta ligeramente el tamaño */
+  filter: brightness(1.1);     /* Aumenta el brillo */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* Aside: Contenido complementario */
+.complementary {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+/* Footer con datos de contacto */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 1rem;
+
+
+}
+
+/* ------------------PAGINA CONTACTOS form.html -------------------------------------*/
+/* Contenedor del formulario */
+.form-container {
+  background-color: #f9f9f9;  
+  border-radius: 8px;         /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto visual */
+  padding: 2rem;              /* Espaciado interno */
+  max-width: 500px;           /* Limito el ancho */
+  margin: 2rem auto;          /* Centrado */
+  display: flex;              /* Flexbox para mejorar la estructura */
+  flex-direction: column;     /* Organiza los elementos en columna */
+  gap: 1rem;                  /* Espaciado entre elementos */
+}
+
+
+/* Estilo para las etiquetas */
+.form-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para los campos de entrada */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto al enfocar los campos */
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #e67e22; 
+  outline: none;
+}
+
+/* Botón de envío */
+.form-container button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.form-container button:hover {
+  background-color: #555;
+}
+
+/* Estilos para las cards de donde estamos - teléfono */
+.review-card-contacto {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  flex: 1 1 300px; /* Permite flexibilidad y un tamaño mínimo de 300px */
+  max-width: 250px; /* tamaño ancho */
+}
+
+.review-card-contacto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.review-content {
+  margin-top: 0.5rem;
+}
+
+.review-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/*********************Estilos para mas_info producto-detalle.html***************************/
+.titulo_info{
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Estilos para las Dcards de mas detalles */
+
+.Dcard{
+ /*display: none; */
+
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Dcard img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.Dcard-content {
+  padding: 1rem;
+}
+
+.Dcard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.Dcard .price {
+  font-family: var(--amount-font);  
+  font-weight: bold;
+  color: var(--amount-color);
+  margin: 0.5rem 0;
+}
+
+.Dcard .description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.btnDetalle {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/*-----------------------ESTILOS PARA PRODUCTOS.html--------------------*/
+.imgApi {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  flex: 1 1 300px; /* Permite flexibilidad y un tamaño mínimo de 300px */
+  max-width: 150px; /* tamaño ancho */
+}
+
+.imgApi img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+   header .logo img {
+        max-width: 3%;
+       
+    }
+    header .logo a{
+         font-size: 0.7rem;
+    }
+   header {padding-top: 1.3rem;
+           padding-bottom: 1rem;
+        } 
+    header h1{
+        font-size: 1.5rem;
+    }  
+        header h2{
+        font-size: 1rem;
+    }  
+    
+  .main-nav ul {
+    flex-direction: column; /*coloca los items verticalmente*/
+    align-items: center;
+    li{padding: 0;}
+    a{padding:0.1rem 0.5rem; font-size: 0.8rem;}
+    }
+  .container {
+    grid-template-columns: 1fr;
+
+  }
+  /*Adaptabilidad formulario - form.html*/
+  .form-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
