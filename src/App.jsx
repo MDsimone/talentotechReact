@@ -33,7 +33,7 @@ function App() {
     <>
       <Header />
       <Nav />
-      <Routes>
+      <Routes basename="/talentotechReact">
        {/* <Route path="/" element={<Main carrito={carrito} vaciarCarrito={vaciarCarrito}/>} /> /*PAso como props carrito y vaciarCarrito a Main*
         <Route path="/producto/:id" element={<ProductoDetalle agregarAlCarrito={agregarAlCarrito}/>} /> /* Muestra el producto al hacer clic en más detalles 
         <Route path="/productos-guitarras"  element={<ProductosGuitarras />} /> /* Muestra la página de productos de guitarras 
