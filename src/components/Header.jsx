@@ -1,11 +1,12 @@
 import React from "react";
+import logo from '../assets/img/guitarra.png';
 //import guitarra from '../assets/guitarra.png';
 function Header() {
     return (
         <header>
             <div className="logo">
                 <a href="index.html">
-                    <img src="../src/assets/img/guitarra.png" alt="Logo de la tienda" />
+                    <img src={logo} alt="Logo de la tienda" />
                     Tu Sonido
                 </a>
             </div>
