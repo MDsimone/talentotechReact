@@ -31,7 +31,6 @@ function App() {
   };
   return (
     <>
-    <Router basename="/talentotechReact">
       <Header />
       <Nav />
       <Routes>
@@ -75,7 +74,6 @@ function App() {
         
         <Route path="/carrito" element={<Carrito carrito={carrito} vaciarCarrito={vaciarCarrito} />} /> /* Muestra el carrito de compras */
         </Routes>  
-      </Router>
       <Footer />
     </>
   )
