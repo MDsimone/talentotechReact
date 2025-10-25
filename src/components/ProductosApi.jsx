@@ -27,17 +27,17 @@ export default function ProductosApi() {
 
   return (
     <ul id="lista-productos">
-  {productos.map((producto) => (
-    console.log(producto.avatar),
-    <CardIndex
-      key={producto.id}
-      imagen={producto.avatar}
-      alt={producto.nombre}
-      titulo={producto.nombre}
-      precio={formatearPrecio(producto.precio)}
-      descripcion={producto.descripcion}
-      link={`/productos/${producto.id}`}
-    />
+      {productos.map((producto) => (
+      <li key={producto.id}>
+        <CardIndex
+        imagen={producto.avatar}
+        alt={producto.nombre}
+        titulo={producto.nombre}
+        precio={formatearPrecio(producto.precio)}
+        descripcion={producto.descripcion}
+        link={`/productos/${producto.id}`}
+        />
+      </li>
   ))}
   
 </ul>

@@ -4,7 +4,7 @@ import formatearPrecio from "./formatearPrecio";
 function CardResenas({ imagen, alt, titulo, precio, descripcion, link }) {
   return (
     <article className="card">
-      <img src={imagen} alt={alt} onError={(e)=> {e.target.src = '/vite.svg';}} style={{width:"100", height:"auto"}} />
+      <img src={imagen} alt={alt} onError={(e)=> {e.target.src = '/vite.svg';}} style={{width:"100px", height:"auto"}} />
       <div className="card-content">
         <h3>{titulo}</h3>
         <p className="price">"{precio}"</p>
