@@ -1,5 +1,5 @@
 import React from "react";
-import instrumentos from "../../data/IndexData.js";
+import instrumentos from "../../data/IndexData.json";
 import CardIndex from "../CardIndex";
 import formatearPrecio from "../formatearPrecio";
 function Galleria() {

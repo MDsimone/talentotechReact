@@ -9,7 +9,7 @@ export default function ProductosApi() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://68d482e3214be68f8c696ae2.mockapi.io/api/productos")
+    fetch("https://68fcd4df96f6ff19b9f66a75.mockapi.io/api/music/productos")
       .then((respuesta) => respuesta.json())
       .then((datos) => {
         setProductos(datos);
@@ -24,7 +24,7 @@ export default function ProductosApi() {
 
   if (cargando) return <p>Cargando productos...</p>;
   if (error) return <p>{error}</p>;
-
+console.log("Productos cargados desde API:", productos);
   return (
     <ul id="lista-productos">
       {productos.map((producto) => (
@@ -35,7 +35,8 @@ export default function ProductosApi() {
         titulo={producto.nombre}
         precio={formatearPrecio(producto.precio)}
         descripcion={producto.descripcion}
-        link={`/productos/${producto.id}`}
+        link={"/producto/" + producto.id}
+        linkState={{ producto }} // pasar objeto completo como state
         />
       </li>
   ))}

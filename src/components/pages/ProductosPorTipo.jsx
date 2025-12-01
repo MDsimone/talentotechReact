@@ -5,7 +5,7 @@ import { formatearPrecio } from "../formatearPrecio";
 
 function ProductosPorTipo() {
  const { tipo } = useParams();
- //console.log("Tipo recibido:", tipo);
+ console.log("Tipo recibido:", tipo);
 //console.log("Todos los productos:", productos);
   const filtrados = productos.filter(p => p.tipo === tipo);
     console.log("Productos filtrados:", filtrados);
